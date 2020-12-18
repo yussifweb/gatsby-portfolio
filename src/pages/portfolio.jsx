@@ -1,13 +1,11 @@
 import React from 'react'
-import Layout from '../Layout'
+import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const Portfolio = () => {
     return (
         <Layout>
-        <SEO title="Portfolio" />  
-
-            
+        <SEO title="Portfolio" />              
         </Layout>
     )
 }
