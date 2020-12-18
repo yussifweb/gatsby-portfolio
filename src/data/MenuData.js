@@ -7,5 +7,5 @@ export const menuData = [
     {icon: (<HomeIcon css={`color: #34d0ff;`} />), title: "Home", link: "/"},
     {icon: (<BuildIcon css={`color: #34d0ff;`} />), title: "Skills", link: "/skills"},
     {icon: (<BusinessCenterIcon css={`color: #34d0ff;`} />), title: "Portfolio", link: "/portfolio"},
-    {icon: (<HomeIcon css={`color: #34d0ff;`} />), title: "Contact", link: "/contact"},
+    {icon: (<HomeIcon css={`color: #34d0ff;`} />), title: "Interests", link: "/interests"},
 ]

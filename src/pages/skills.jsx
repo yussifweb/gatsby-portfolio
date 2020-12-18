@@ -2,8 +2,8 @@ import React from 'react'
 import SEO from '../components/seo'
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Divider, Grid, Typography, Container, Tooltip, IconButton } from '@material-ui/core';
-import { tools } from '../data/skills'
+import { Divider, Grid, Typography, Container, Tooltip, IconButton, ListItem, ListItemAvatar, Avatar, ListItemText, List } from '@material-ui/core';
+import { tools, skills } from '../data/skills'
 import Layout from '../components/Layout/Layout';
 
 const useStyles = makeStyles((theme) => ({
@@ -49,8 +49,8 @@ const Skills = () => {
       <Container>
       <Grid container spacing={2}>
 
-        <Grid item xs={12} sm={12} style={{ marginTop: `1rem` }} className={classes.paper}>
-          <Typography className={classes.heading} gutterBottom>PROGRAMMING LANGUAGES & TOOLS</Typography>
+        <Grid item xs={12} sm={12} className={classes.paper}>
+          <Typography className={classes.heading} >PROGRAMMING LANGUAGES & TOOLS</Typography>
           
           {tools.map((tool, index) => (
             <Tooltip key={index} title={tool.title} className={classes.tooltip}> 
@@ -59,20 +59,24 @@ const Skills = () => {
             </IconButton>
             </Tooltip>
           ))}
-
         </Grid>
 
         <Grid item xs={12} sm={12} style={{ margin: `1rem 0` }}><Divider /></Grid>
 
         <Grid item xs={12} sm={8}>
-          
+          <Typography className={classes.heading}>RELEVANT SKILLS</Typography>          
           <Container>
-              <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Perferendis, laudantium iusto? Quaerat at minima quam quia sed accusantium
-                  fugit fuga in quidem voluptatibus unde eaque exercitationem quod veniam possimus 
-                  dicta, nihil commodi fugiat tempore molestiae aliquid quos voluptas quisquam.
-                   Molestias esse vitae eligendi quidem repellendus, doloremque veritatis fuga unde. Minima!</Typography>
-          </Container>
+              <List>
+                {skills.map((skill, index) => (
+                  <ListItem key={index}>
+                  <ListItemAvatar>
+                    <Avatar>{skill.icon}</Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary={skill.text} />
+                </ListItem>
+                ))}
+            </List>
+             </Container>
         </Grid>
 
         </Grid>
