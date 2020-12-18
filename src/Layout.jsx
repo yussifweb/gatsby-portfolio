@@ -5,8 +5,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'gatsby'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import dp from '../../assets/images/ice.png'
-import {menuData} from '../../data/MenuData'
+import dp from './assets/images/ice.png'
+import {menuData} from './data/MenuData'
 
 const drawerWidth = 300;
 

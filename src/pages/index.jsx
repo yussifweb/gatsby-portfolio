@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Divider, Grid, Typography, Container, Tooltip, IconButton } from '@material-ui/core';
 import image from '../assets/images/hero.png'
 import { online } from '../data/onlineData'
-import Layout from '../components/Layout/Layout';
+import Layout from '../Layout';
 import '../layout.css'
 
 const font = "'Saira Extra Condensed', sans-serif"

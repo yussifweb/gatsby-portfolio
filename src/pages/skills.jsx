@@ -4,7 +4,7 @@ import SEO from '../components/seo'
 import { makeStyles } from '@material-ui/core/styles';
 import { Divider, Grid, Typography, Container, Tooltip, IconButton, ListItem, ListItemAvatar, Avatar, ListItemText, List } from '@material-ui/core';
 import { tools, skills } from '../data/skills'
-import Layout from '../components/Layout/Layout';
+import Layout from '../Layout';
 
 const useStyles = makeStyles((theme) => ({
   root: {
