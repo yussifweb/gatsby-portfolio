@@ -1,0 +1,315 @@
+{
+   "index": [
+       {   
+           "profile" : "profile.png",
+           "intro": "I am a self motivated, result oriented, respectful and responsible gentleman. I derive most of my motivation from myself and few from other people because I am the hero of my own story. I love to use my free period to code, play music or watch movies. And also love to be alone with my thoughts but that doesn't mean I'm an introvert, NOPE I'm actually a friendly guy and really like hanging out with my friends. Thanks for your time and enjoy your journey on this site."
+       }
+   ],
+   "about" : [
+       {
+        "first_name" : "Yussif",
+        "last_name" : "Issah",
+        "age" : 23,
+        "country" : "Ghana"
+       }
+   ],
+   "contacts" : [
+       {    
+         "url" : "tel:+233545110415",
+         "class" : "phone-call",
+         "name" : "Phone1"
+       },
+       {    
+        "url" : "tel:+233508255255",
+        "class" : "phone-call",
+        "name" : "Phone2"
+      },
+      {    
+        "url" : "mailto:yussifissahgh@gmail.com",
+        "class" : "email",
+        "name" : "Email"  
+      },
+      {    
+        "url" : "https://facebook.com/yussif.issah.714",
+        "class" : "facebook",
+        "name" : "Facebook" 
+      },
+      {    
+        "url" : "https://twitter.com/net_kiddj",
+        "class" : "twitter",
+        "name" : "Twitter" 
+      },
+      {    
+        "url" : "https://instagram.com/netkiddj",
+        "class" : "instagram",
+        "name" : "Instagram"  
+      },
+      {    
+        "url" : "https://linkedin.com/in/netkiddj",
+        "class" : "linkedin",
+        "name" : "LinkedIn"  
+      },
+      {    
+        "url" : "https://github.com/yussifweb",
+        "class" : "github",
+        "name" : "Github"  
+      }
+   ],
+   "skills" : [
+       {
+         "name" : "HTML",
+         "class" : "html-5"  
+       },
+       {
+        "name" : "CSS",
+        "class" : "css-3"  
+      },
+      {
+        "name" : "JavaScript",
+        "class" : "javascript"
+      },
+      {
+        "name" : "Bootstrap",
+        "class" : "bootstrap-4"  
+      },
+      {
+        "name" : "React",
+        "class" : "react"  
+      },
+      {
+        "name" : "Wordpress",
+        "class" : "wordpress"  
+      },
+      {
+        "name" : "Microsoft Powerpoint",
+        "class" : "powerpoint"  
+      },
+      {
+        "name" : "Microsoft Excel",
+        "class" : "excel"  
+      },
+      {
+        "name" : "Microsoft Word",
+        "class" : "word"  
+      },
+      {
+        "name" : "Photography",
+        "class" : "camera"  
+      },
+      {
+        "name" : "Photoshop",
+        "class" : "photoshop"  
+      },
+      {
+        "name" : "Premiere Pro",
+        "class" : "premier"  
+      },
+      {
+        "name" : "DJ (Virtual DJ)",
+        "class" : "virtual-dj"  
+      },
+      {
+        "name" : "Radio Production",
+        "class" : "on-air"  
+      },
+      {
+        "name" : "Audition",
+        "class" : "audition"  
+      },
+      {
+        "name" : "Audacity",
+        "class" : "audacity"  
+      },
+      {
+        "name" : "Radio & TV Marketing",
+        "class" : "listening"  
+      }
+   ],
+   "education" : [
+       {
+        "name" : "Ekacity Media College (2015 – 2016)",
+        "cert" : "(Diploma in Journalism and Ethics)"
+       },
+       {
+        "name" : "Bekwai Seventh-Day Adventist Senior High School (2011 – 2014)",
+        "cert" : "(West African Senior High Certificate Examination)"
+       },
+       {
+        "name" : "Bekwai Roman Catholic Junior High School (2009-2011)",
+        "cert" : "(Basic Education Certificate Examination)"
+       }
+   ],
+   "other_certs" : [
+       {
+        "name" : "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+        "by" : "Coursera (The Hong Kong University of Science and Technology)",
+        "url" : "https://www.coursera.org/account/accomplishments/records/L59DFXCGCX7Z"
+       },
+       {
+        "name" : " Javascript Programming For Everyone",
+        "by" : "Udemy",
+        "url" : "https://www.udemy.com/certificate/UC-5fe2bee0-a633-4af5-8b83-cdd9220dd2b4/"
+       },
+       {
+        "name" : "Build Your First React Website",
+        "by" : "Coursera (Project Network)",
+        "url" : "https://www.coursera.org/account/accomplishments/certificate/ZW6N7UG54MF5"
+       },
+       {
+        "name" : "Web Development Path (Node Js)",
+        "by" : "Progate",
+        "url" : "https://progate.com/path_certificate/774d4885qan6l1"
+       },
+       {
+        "name" : "CSS",
+        "by" : "SoloLearn",
+        "url" : "https://www.sololearn.com/Certificate/1023-7079314/pdf/"
+       },
+       {
+        "name" : "How to Create a Wordpress Website for Absolute Beginners",
+        "by" : "Udemy",
+        "url" : "https://www.udemy.com/certificate/UC-COC54BH0/"
+       },
+       {
+        "name" : "HTML",
+        "by" : "SoloLearn",
+        "url" : "https://www.sololearn.com/Certificate/1014-7079314/pdf/"
+       },
+       {
+        "name" : "Introduction to Web Technologies",
+        "by" : "Udemy",
+        "url" : "https://www.udemy.com/certificate/UC-LHN7CFNX/"
+       } 
+   ],
+   "rel_skills" : [
+       {
+        "name" : "Great ability to learn quickly and adapt to changing methods and environment."
+       },
+       {
+        "name" : "Excellent human relations."
+       },
+       {
+        "name" : "Reliable, organized and punctual."
+       },
+       {
+        "name" : "Extreme eager to learn."
+       },
+       {
+        "name" : "General knowledge in Information Technology"
+       }
+   ],
+   "works" : [
+     {
+       "name": "Nursery Staff, Cocoa Health and Extension Division, Bekwai District",
+       "date" : "October, 2015 - August, 2016"
+     },
+     {
+       "name" : "Producer of 'Time with Ekacity' program on Dess 90.3FM, Bekwai",
+       "date" : "January, 2016 - June,2016"
+     },
+     {
+       "name" : "DJ, It's My Kitchen Restaurant, Kumasi",
+       "date" : "September 2015 - December 2016"
+     },
+     {
+       "name" : "Pollinator, Cocoa Health and Extension Division, Bekwai District",
+       "date" : "June - December, 2017"
+     },
+     {
+       "name" : "Pollinator, Cocoa Health and Extension Division, Bekwai District",
+       "date" : "June - September, 2018"
+     },
+     {
+       "name" : "Master Pollinator, Cocoa Health and Extension Division, Bekwai District",
+       "date" : "June - September,2019"
+     },
+     {
+       "name" : "Zonal Officer, Farmerline",
+       "date" : "March 2019(Currently Work here)"
+     }
+   ],
+   "other_works" : [
+     {
+       "name": "Enumerator",
+       "job" : "(Mosquito Net Distribution Programme) Ghana Health Service"
+     },
+     {
+       "name" : "Biometric Verification Officer",
+       "job" : "Electoral Commission of Ghana"
+     }
+   ],
+   "portfolio" : [
+     {
+       "url" : "LIMS 2",
+       "title" : "Lims Radio Coming Soon Flyer"
+     },
+     {
+      "url" : "EDIOT3",
+      "title" : "DJ Koded x Ebony-Ediot Cover art"
+    },
+    {
+      "url" : "MMM",
+      "title" : "Metro Morning Mix Flyer"
+    },
+    {
+      "url" : "NERO B",
+      "title" : "Adwuma Mmre on Testimony FM"
+    },
+    {
+      "url" : "T Drive",
+      "title" : "Testimony Drive Time"
+    },
+    {
+      "url" : "mpotamu",
+      "title" : "Me Mpotamu Mpuntuo on Testimony FM"
+    },
+    {
+      "url" : "tm3",
+      "title" : "Flavour Zone on Sikka FM"
+    },
+    {
+      "url" : "t Drivet",
+      "title" : "Testimony Drive Time"
+    },
+    {
+      "url" : "starr luv2",
+      "title" : "Starr Luv-Bend Down"
+    },
+    {
+      "url" : "CARTHY",
+      "title" : "Hip Pop Life Mixtape"
+    },
+    {
+      "url" : "PM1",
+      "title" : "Peace Mobile Preachers Logo"
+    },
+    {
+      "url" : "koded RG",
+      "title" : "DJ Koded-GH Raggae Mixtape"
+    },
+    {
+      "url" : "iko",
+      "title" : "Iko Shei Allah Fun Club"
+    },
+    {
+      "url" : "Akosua Boatemaa",
+      "title" : "Akosua Boatemaa Showbiz Hub"
+    },
+    {
+      "url" : "starr luv",
+      "title" : "Starr Luv-Bhad Gyal"
+    },
+    {
+      "url" : "ALBERT",
+      "title" : "Testimony Fm Late Night Jam"
+    },
+    {
+      "url" : "kuul",
+      "title" : "Kuul FM Morning Show"
+    },
+    {
+      "url" : "koded mix",
+      "title" : "Quaeamtine Mixtape Cover Art"
+    }
+   ]
+}
