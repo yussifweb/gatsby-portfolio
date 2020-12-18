@@ -20,21 +20,41 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: font,
     textTransform: 'uppercase',
     fontWeight: `700`,
-    fontSize: `clamp(1rem, 6vw, 6rem)`,
+    fontSize: `6rem`,
     color: `#0777b8`,
+
+    [theme.breakpoints.down('sm')]: {
+      fontSize: `4rem`,
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: `3.5rem`,
+    },
+
   },
     paperWk: {
     fontFamily: font,
     textTransform: 'uppercase',
-    fontSize: `clamp(1rem, 2vw, 3rem)`,
+    fontSize: `2.5rem`,
     color: `#585656`,
     marginTop: `-2rem`,
     paddingLeft: `1rem`,
 
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: `0.5rem`,
+      marginTop: `-0.5rem`,
+      fontSize: `1rem`,
+    },
     [theme.breakpoints.down('sm')]: {
       paddingLeft: `0.5rem`,
-      marginTop: `-1rem`
+      marginTop: `-0.5rem`,
+      fontSize: `1rem`,
     },
+    [theme.breakpoints.down('xs')]: {
+      paddingLeft: `0.5rem`,
+      marginTop: `-1rem`,
+      fontSize: `1.3rem`,
+    },
+
   },
   grid: {
       marginBottom: `1rem`,
