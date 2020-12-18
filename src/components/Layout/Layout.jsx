@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
-import { CssBaseline, Divider, Drawer, Hidden, IconButton, List, ListItemIcon, ListItem, ListItemText, Toolbar, Typography, Container } from '@material-ui/core';
+import { Avatar, CssBaseline, Divider, Drawer, Hidden, IconButton, List, ListItemIcon, ListItem, ListItemText, Toolbar, Typography, Container } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Link } from 'gatsby'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import dp from '../../assets/images/ice.png'
@@ -43,10 +44,23 @@ const useStyles = makeStyles((theme) => ({
   img: {
       width: `100%`,
       height: `100%`,
-      margin: `20px 0 0 0`
+      margin: `20px 0 0 0`,
   },
   center: {
       textAlign: `center`,
+  },
+  link: {
+    textDecoration: 'none',
+    color: 'inherit',
+
+    '&:hover': {
+      backgroundColor: `#666465`,
+      color: `#6bfff0`,
+    },    
+  },
+  active: {
+    backgroundColor: `#b3b2b2`,
+    color: `#ff0000616`,
   },
 }));
 
@@ -62,17 +76,16 @@ const Layout = ({ children }, props) => {
 
   const drawer = (
     <div style={{ marginTop: `1rem` }}>
-      <Container maxWidth="sm"><img className={classes.img} alt="Yussif Issah" src={dp} /></Container>
-      <Typography variant="h4" className={classes.center}>Yussif Issah</Typography>
-      <Typography variant="subtitle2" className={classes.center}>Frontend Developer</Typography>
-      <Typography variant="subtitle2" className={classes.center} gutterBottom>@DevCareers</Typography>
+      <Container maxWidth="sm" style={{ margin: `4rem 0 3rem 0` }}>
+        <Avatar variant="rounded" alt="Yussif Issah" src={dp} className={classes.img}/>
+      </Container>
       <Divider />
       <List className={classes.content}>
-        {menuData.map((item, index) => (
-          <ListItem button key={index} variant="h4">
+        {menuData.map((item, index) => (          
+          <ListItem component={Link} className={classes.link} to={item.link} activeClassName={classes.active} key={index} button variant="h4">
            <ListItemIcon>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.title} />
-          </ListItem>
+            <ListItemText primary={item.title} />                      
+          </ListItem>           
         ))}
       </List>
       <Divider />

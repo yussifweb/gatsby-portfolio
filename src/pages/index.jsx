@@ -1,19 +1,40 @@
 import React from 'react'
-import SEO from '../seo'
+import SEO from '../components/seo'
 
 import { makeStyles } from '@material-ui/core/styles';
 import { Divider, Grid, Typography, Container, Tooltip, IconButton } from '@material-ui/core';
-import image from '../../assets/images/hero.png'
-import heroBg from '../../assets/images/herobg.jpg'
-import Video from '../../assets/video/video1.mp4'
-import { online } from '../../data/onlineData'
+import image from '../assets/images/hero.png'
+import { online } from '../data/onlineData'
+import Layout from '../components/Layout/Layout';
+import '../layout.css'
 
+const font = "'Saira Extra Condensed', sans-serif"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   paper: {
     padding: theme.spacing(1),
+  },
+    paperNm: {
+    fontFamily: font,
+    textTransform: 'uppercase',
+    fontWeight: `700`,
+    fontSize: `clamp(1rem, 6vw, 6rem)`,
+    color: `#0777b8`,
+  },
+    paperWk: {
+    fontFamily: font,
+    textTransform: 'uppercase',
+    fontSize: `clamp(1rem, 2vw, 3rem)`,
+    color: `#585656`,
+    marginTop: `-2rem`,
+    paddingLeft: `1rem`,
+
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: `0.5rem`,
+      marginTop: `-1rem`
+    },
   },
   grid: {
       marginBottom: `1rem`,
@@ -41,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => { 
     const classes = useStyles();  
     return (      
-     <div>
+     <Layout>
        <SEO title="Home" />  
       <Container>
 
@@ -50,9 +71,8 @@ const Home = () => {
         <Grid item xs={12} sm={7}>
 
         <Grid item xs={12} sm={12} className={classes.grid}>
-         <Typography className={classes.paper} style={{fontSize: `clamp(1.5rem, 6vw, 2.5rem)`}} variant="h4" gutterBottom>Hello World, My name is Yussif Issah</Typography>
-          <Typography className={classes.paper} style={{fontSize: `clamp(1rem, 6vw, 1.5rem)`}} variant="h5">I’m a Web Developer / Disk Jockey</Typography>
-          <Typography className={classes.paper}>I’m also into  Graphic Design / Photography / Video Editing / Radio Production & Marketing</Typography>
+          <Typography variant="h2" className={classes.paperNm}>Yussif <span style={{ color: `#585656` }}>Issah</span></Typography>
+          <Typography variant="subtitle1" className={classes.paperWk}>Frontend Developer, <span style={{ color: `#0777b8` }}>DevCareers</span></Typography>
         </Grid>
 
         <Divider />
@@ -88,7 +108,7 @@ const Home = () => {
 
       </Grid>
       </Container>
-    </div>
+    </Layout>
     )
 }
 
