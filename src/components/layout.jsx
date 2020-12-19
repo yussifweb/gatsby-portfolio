@@ -94,7 +94,16 @@ const Layout = ({ children }, props) => {
         ))}
       </List> */}
 
-      <List className={classes.content}>       
+      <List className={classes.content}>
+        {menuData.map((item, index) => (          
+          <Link  className={classes.link} to={item.link} activeClassName={classes.active} key={index} button variant="h4">
+           <ListItemIcon>{item.icon}</ListItemIcon>
+            <ListItemText primary={item.title} />                      
+          </Link>           
+        ))}
+      </List>
+
+      {/* <List className={classes.content}>       
           <ListItem component={Link} className={classes.link} to="/" activeClassName={classes.active} button variant="h4">
            <ListItemIcon><HomeIcon /></ListItemIcon>
             <ListItemText primary="Home" />                      
@@ -115,7 +124,7 @@ const Layout = ({ children }, props) => {
             <ListItemText primary="Portfolio" />                      
           </ListItem>           
            
-      </List>
+      </List> */}
 
       <Divider />
       <footer style={{ marginTop: `1rem`, textAlign: 'center' }}>
