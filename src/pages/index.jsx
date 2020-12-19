@@ -2,7 +2,7 @@ import React from 'react'
 import SEO from '../components/seo'
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Divider, Grid, Typography, Container, Tooltip, IconButton } from '@material-ui/core';
+import { Divider, Grid, Typography, Container, Tooltip, IconButton, Avatar } from '@material-ui/core';
 import image from '../assets/images/hero.png'
 import { online } from '../data/onlineData'
 import Layout from '../components/layout';
@@ -54,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
       marginTop: `-1rem`,
       fontSize: `1.3rem`,
     },
-
   },
   grid: {
       marginBottom: `1rem`,
@@ -84,7 +83,6 @@ const Home = () => {
     return (      
      <Layout>
        <SEO title="Home" />  
-      <Container>
 
       <Grid container spacing={2}>
 
@@ -101,11 +99,12 @@ const Home = () => {
           <Typography className={classes.paper}>I am a self motivated, result oriented, respectful and responsible 
             gentleman. I derive most of my motivation from myself and f
             ew from other people because I am the hero of my own story.
-            I love to use my free period to code, play music or watch movies. 
-            And also love to be alone with my thoughts but that doesn't mean 
+            I love to use my free period to play music or watch movies. 
+            I do love to be alone with my thoughts but that doesn't mean 
             I'm an introvert, NOPE I'm actually a friendly guy and really like 
-            hanging out with my friends. Thanks for your time and enjoy 
-            your journey on this site.</Typography>
+            hanging out with my friends. I love to socialize and everyone is welcome
+             to my inbox for bussiness purposes or chit chat. Thanks for your time and enjoy 
+            your amazing tour on this site.</Typography>
         </Grid>
 
         <Grid item xs={12} sm={12} style={{ marginTop: `5rem` }} className={classes.paper}>
@@ -117,17 +116,16 @@ const Home = () => {
             </Tooltip>
           ))}
         </Grid>
-
         </Grid>
 
         <Grid item xs={12} sm={5}>
-          <Container>
-              <img className={classes.img} alt="Yussif Issah" src={image} />
-          </Container>
+          <Container maxWidth="sm">         
+            <Avatar className={classes.img} alt="Yussif Issah" src={image} />
+          </Container>         
         </Grid>
 
       </Grid>
-      </Container>
+ 
     </Layout>
     )
 }

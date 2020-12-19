@@ -2,7 +2,7 @@ import React from 'react'
 import SEO from '../components/seo'
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Divider, Grid, Typography, Container, Tooltip, IconButton, ListItem, ListItemAvatar, Avatar, ListItemText, List } from '@material-ui/core';
+import { Divider, Grid, Typography, Tooltip, IconButton, ListItem, ListItemAvatar, Avatar, ListItemText, List } from '@material-ui/core';
 import { tools, skills } from '../data/skills'
 import Layout from '../components/layout';
 
@@ -31,7 +31,16 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: `#464344`,
       color: `#6bfff0`,
-    },    
+    },
+    
+    [theme.breakpoints.down('xs')]: {
+    height: `5rem`,
+    width: `5rem`,
+    color: `darkgrey`,
+    margin: `0.5rem 0.5rem 0.5rem 0`,
+    fontSize: `3rem`,
+    },
+
   },
   heading: {
     fontSize: `clamp(1.3rem, 6vw, 2.5rem)`,
@@ -46,11 +55,11 @@ const Skills = () => {
     return (      
      <Layout>
        <SEO title="Skills & Tools" />  
-      <Container>
       <Grid container spacing={2}>
 
-        <Grid item xs={12} sm={12} className={classes.paper}>
+        <Grid item xs={12} sm={12} className={classes.paper} gutterBottom>
           <Typography className={classes.heading} >PROGRAMMING LANGUAGES & TOOLS</Typography>
+          <Divider />
           
           {tools.map((tool, index) => (
             <Tooltip key={index} title={tool.title} className={classes.tooltip}> 
@@ -61,11 +70,9 @@ const Skills = () => {
           ))}
         </Grid>
 
-        <Grid item xs={12} sm={12} style={{ margin: `1rem 0` }}><Divider /></Grid>
-
         <Grid item xs={12} sm={8}>
-          <Typography className={classes.heading}>RELEVANT SKILLS</Typography>          
-          <Container>
+          <Typography className={classes.heading}>RELEVANT SKILLS</Typography> 
+           <Divider />         
               <List>
                 {skills.map((skill, index) => (
                   <ListItem key={index}>
@@ -76,12 +83,9 @@ const Skills = () => {
                 </ListItem>
                 ))}
             </List>
-             </Container>
+        </Grid>
         </Grid>
 
-        </Grid>
-
-      </Container>
     </Layout>
     )
 }
