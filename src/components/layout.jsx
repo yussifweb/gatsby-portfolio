@@ -8,6 +8,11 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import dp from '../assets/images/ice.png'
 import {menuData} from '../data/MenuData'
 
+import HomeIcon from "@material-ui/icons/Home";
+import BuildIcon from '@material-ui/icons/Build';
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+
+
 const drawerWidth = 300;
 
 const useStyles = makeStyles((theme) => ({
@@ -80,14 +85,38 @@ const Layout = ({ children }, props) => {
         <Avatar variant="rounded" alt="Yussif Issah" src={dp} className={classes.img}/>
       </Container>
       <Divider />
-      <List className={classes.content}>
+      {/* <List className={classes.content}>
         {menuData.map((item, index) => (          
           <ListItem component={Link} className={classes.link} to={item.link} activeClassName={classes.active} key={index} button variant="h4">
            <ListItemIcon>{item.icon}</ListItemIcon>
             <ListItemText primary={item.title} />                      
           </ListItem>           
         ))}
+      </List> */}
+
+      <List className={classes.content}>       
+          <ListItem component={Link} className={classes.link} to="/" activeClassName={classes.active} button variant="h4">
+           <ListItemIcon><HomeIcon /></ListItemIcon>
+            <ListItemText primary="Home" />                      
+          </ListItem> 
+
+          <ListItem component={Link} className={classes.link} to="/skills" activeClassName={classes.active} button variant="h4">
+           <ListItemIcon><BuildIcon /></ListItemIcon>
+            <ListItemText primary="Skills" />                      
+          </ListItem>
+
+          <ListItem component={Link} className={classes.link} to="/interests" activeClassName={classes.active} button variant="h4">
+           <ListItemIcon><BusinessCenterIcon /></ListItemIcon>
+            <ListItemText primary="Interests" />                      
+          </ListItem>
+
+          <ListItem component={Link} className={classes.link} to="/portfolio" activeClassName={classes.active} button variant="h4">
+           <ListItemIcon><BusinessCenterIcon /></ListItemIcon>
+            <ListItemText primary="Portfolio" />                      
+          </ListItem>           
+           
       </List>
+
       <Divider />
       <footer style={{ marginTop: `1rem`, textAlign: 'center' }}>
           © {new Date().getFullYear()} Made with <span style={{color:'#ff0000', fontSize: `1.2rem`}}>&#9829;</span> by
