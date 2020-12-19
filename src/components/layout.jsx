@@ -85,52 +85,20 @@ const Layout = ({ children }, props) => {
         <Avatar variant="rounded" alt="Yussif Issah" src={dp} className={classes.img}/>
       </Container>
       <Divider />
-      {/* <List className={classes.content}>
+      <List className={classes.content}>
         {menuData.map((item, index) => (          
           <ListItem component={Link} className={classes.link} to={item.link} activeClassName={classes.active} key={index} button variant="h4">
            <ListItemIcon>{item.icon}</ListItemIcon>
             <ListItemText primary={item.title} />                      
           </ListItem>           
         ))}
-      </List> */}
-
-      <List className={classes.content}>
-        {menuData.map((item, index) => (          
-          <Link  className={classes.link} to={item.link} activeClassName={classes.active} key={index} button variant="h4">
-           <ListItemIcon>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.title} />                      
-          </Link>           
-        ))}
       </List>
-
-      {/* <List className={classes.content}>       
-          <ListItem component={Link} className={classes.link} to="/" activeClassName={classes.active} button variant="h4">
-           <ListItemIcon><HomeIcon /></ListItemIcon>
-            <ListItemText primary="Home" />                      
-          </ListItem> 
-
-          <ListItem component={Link} className={classes.link} to="/skills" activeClassName={classes.active} button variant="h4">
-           <ListItemIcon><BuildIcon /></ListItemIcon>
-            <ListItemText primary="Skills" />                      
-          </ListItem>
-
-          <ListItem component={Link} className={classes.link} to="/interests" activeClassName={classes.active} button variant="h4">
-           <ListItemIcon><BusinessCenterIcon /></ListItemIcon>
-            <ListItemText primary="Interests" />                      
-          </ListItem>
-
-          <ListItem component={Link} className={classes.link} to="/portfolio" activeClassName={classes.active} button variant="h4">
-           <ListItemIcon><BusinessCenterIcon /></ListItemIcon>
-            <ListItemText primary="Portfolio" />                      
-          </ListItem>           
-           
-      </List> */}
 
       <Divider />
       <footer style={{ marginTop: `1rem`, textAlign: 'center' }}>
           © {new Date().getFullYear()} Made with <span style={{color:'#ff0000', fontSize: `1.2rem`}}>&#9829;</span> by
           {` `}
-          <a href="http://www.awaga.epizy.com" target="_blank">Yussifweb</a>
+          <a href="https://twitter.com/yussifweb" target="_blank">Yussifweb</a>
         </footer>
     </div>
 
@@ -138,7 +106,7 @@ const Layout = ({ children }, props) => {
 
 const container = window !== undefined ? () => window().document.body : undefined;
     return (
-    <>
+      <>
         <Toolbar className={classes.appBar}>
           <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} className={classes.menuButton}>
             <MenuIcon />
