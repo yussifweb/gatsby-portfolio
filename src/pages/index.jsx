@@ -1,11 +1,11 @@
 import React from 'react'
+import Layout from '../components/layout';
 import SEO from '../components/seo'
 
 import { makeStyles } from '@material-ui/core/styles';
 import { Divider, Grid, Typography, Container, Tooltip, IconButton, Avatar } from '@material-ui/core';
 import image from '../assets/images/hero.png'
 import { online } from '../data/onlineData'
-import Layout from '../components/layout';
 import '../layout.css'
 
 const font = "'Saira Extra Condensed', sans-serif"

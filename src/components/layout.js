@@ -8,11 +8,6 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import dp from '../assets/images/ice.png'
 import {menuData} from '../data/MenuData'
 
-import HomeIcon from "@material-ui/icons/Home";
-import BuildIcon from '@material-ui/icons/Build';
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-
-
 const drawerWidth = 300;
 
 const useStyles = makeStyles((theme) => ({
@@ -135,11 +130,7 @@ const container = window !== undefined ? () => window().document.body : undefine
 };
 
 Layout.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
+  children: PropTypes.node.isRequired,
+}
 
 export default Layout
