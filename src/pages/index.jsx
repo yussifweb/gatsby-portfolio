@@ -110,7 +110,7 @@ const Home = () => {
         <Grid item xs={12} sm={12} style={{ marginTop: `5rem` }} className={classes.paper}>
           {online.map((on, index) => (
             <Tooltip key={index} title={on.title} className={classes.tooltip}>
-            <IconButton href={on.url} aria-label={on.label}>
+            <IconButton href={on.url} target="_blank" aria-label={on.label}>
                 {on.icon}
             </IconButton>
             </Tooltip>
