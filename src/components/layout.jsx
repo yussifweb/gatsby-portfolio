@@ -101,14 +101,13 @@ const Layout = ({ children }, props) => {
 const container = window !== undefined ? () => window().document.body : undefined;
     return (
     <>
-    {/* <div className={classes.root}> */}
-
-      <Toolbar className={classes.appBar}>
+        <Toolbar className={classes.appBar}>
           <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} className={classes.menuButton}>
             <MenuIcon />
           </IconButton>
         </Toolbar>
 
+    <div className={classes.root}>
       <CssBaseline />         
       <nav className={classes.drawer} aria-label="menu">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -124,7 +123,7 @@ const container = window !== undefined ? () => window().document.body : undefine
 
       <main className={classes.content}>{children}</main>
             
-    {/* </div> */}
+    </div>
     </>
     )
 };
